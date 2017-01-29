@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/profile.css') }}"/>
+{% endblock%}
+{% block main %}
+    <h1>Profile</h1>
+    <img src="{{ url_for('static', filename='Darth-Vader.jpg') }}" id="ProfilePic">
+    <div class="biobox">
+        <div id="Name"><b>Darth Vader</b></div>
+        <div id="Date" class="bottomborder">Today's date is {{ timestamp }}</div>
+        <div id="UserName"><b>Username:</b> Darth-Vader</div>
+        <div id="IDNum"><b>ID Number:</b> 620012345</div>
+        <div id="Age"><b>Age:</b> 45</div>
+        <div id="Gender" class="bottomborder"><b>Gender:</b> Male</div>
+        <div id="AboutMe">Dark Lord of the Sith</div>
+    </div>
+{% endblock %}
